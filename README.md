@@ -1,15 +1,14 @@
-# E - Voting Created Using Django 
-This E - Voting System Was Developed With Django(Python Framework).
-Feel free to make changes based on your requirements.
+## BallotNest
 
+Introducing our cutting-edge Voting System web application, crafted with Django to revolutionize the voting process for organizations and institutions. This advanced e-voting platform mirrors the efficiency of traditional voting systems but with the power of automation and online convenience.
 
+# Key Features:
 
-If you like this project, then ADD a STAR ⭐️  to this project 👆
-
-This Voting System web application built using Django can serve as the automated voting system for organizations and/or institutions. The system works like the common election manual system of voting whereas the system must be populated by the list of the positions, candidates, and voters. The E-voting system can help a certain organization or school to minimize the voting time duration because aside providing the voters an online platform to vote, the system will automatically count the votes for each candidate. The system has 2 sides of the user interface which are the administrator and voters side. The admin user is in charge to populate and manage the data of the system and the voter side which is where the voters will choose their candidate and submit their votes.
-
-
-[Front-end Template](http://adminlte.io "Admin LTE.io")
+Seamless Administration: Admins can effortlessly manage and populate the system with positions, candidates, and voter details, ensuring a smooth setup and operation.
+Effortless Voting: Voters can cast their votes through a user-friendly online interface, reducing the time and hassle associated with manual voting.
+Automatic Vote Tallying: Say goodbye to manual vote counting! Our system automatically calculates and displays results, ensuring accuracy and efficiency.
+Dual Interfaces: Experience a streamlined process with distinct interfaces for administrators and voters. Admins handle system management, while voters enjoy a straightforward, intuitive voting experience.
+Perfect for schools, organizations, and any institution looking to enhance their voting process, this system simplifies and speeds up elections, providing a modern solution to traditional voting challenges.
 
 
 ## Features:
@@ -43,44 +42,40 @@ This Voting System web application built using Django can serve as the automated
 
 ## 📸 ScreenShots
 <figure>
+  <figcaption>Database Design</figcaption>
   <img
   src="ss/DB.png"
   alt="The beautiful MDN logo.">
-  <figcaption>Database Design</figcaption>
+  
 </figure>
 
-
-| Admin| Voter|
+| Login| Signup|
 |------|-------|
-|<img src="ss/admin/1.png" width="400">|<img src="ss/voter/1.png" width="400">|
-|<img src="ss/admin/2.png" width="400">|<img src="ss/voter/2.png" width="400">|
-|<img src="ss/admin/3.png" width="400">|<img src="ss/voter/3.png" width="400">|
-|<img src="ss/admin/4.png" width="400">|<img src="ss/voter/4.png" width="400">|
-|<img src="ss/admin/5.png" width="400">|<img src="ss/voter/5.png" width="400">|
-|<img src="ss/admin/6.png" width="400">|<img src="ss/voter/6.png" width="400">|
-|<img src="ss/admin/7.png" width="400">|<img src="ss/voter/7.png" width="400">|
-|<img src="ss/admin/8.png" width="400">|<img src="ss/voter/8.png" width="400">|
-|<img src="ss/admin/9.png" width="400">|<img src="ss/voter/9.png" width="400">|
-|<img src="ss/admin/10.png" width="400">|<img src="ss/voter/10.png" width="400">|
-|<img src="ss/admin/11.png" width="400">|<img src="ss/voter/11.png" width="400">|
-|<img src="ss/admin/12.png" width="400">|<img src="ss/voter/12.png" width="400">|
-|<img src="ss/admin/13.png" width="400">|<img src="ss/voter/13.png" width="400">|
-|<img src="ss/admin/14.png" width="400">|<img src="ss/voter/14.png" width="400">|
-|<img src="ss/admin/15.png" width="400">|------- ------ ------ ------|
-|<img src="ss/admin/16.png" width="400">|------- ------ ------ ------|
-|<img src="ss/admin/17.png" width="400">|------- ------ ------ ------|
-|<img src="ss/admin/18.png" width="400">|------- ------ ------ ------|
+|<img src="https://github.com/Nafeessidd1/BallotNest/blob/master/ss/login.png" width="700">|<img src="https://github.com/Nafeessidd1/BallotNest/blob/master/ss/register.png" width="700">|
 
+# ADMIN
+<figure>
+  <img
+  src="ss/admin/Screenshot 2024-08-10 at 3.32.23 PM.png"
+  alt="The beautiful MDN logo.">
+</figure>
+<figure>
+  <img
+  src="ss/admin/Screenshot 2024-08-10 at 3.30.04 PM.png"
+  alt="The beautiful MDN logo.">
+</figure>
+<figure>
+  <img
+  src="ss/admin/Screenshot 2024-08-10 at 3.30.13 PM.png"
+  alt="The beautiful MDN logo.">
+</figure>
 
-
-
-## Support Developer
-1. Add a Star 🌟  to this 👆 Repository
-2. Follow on Twitter/Github
-
-
-## Passport/Images
-Images are from [Unsplash](https://unsplash.com) 
+# VOTER
+<figure>
+  <img
+  src="ss/voter/Screenshot 2024-08-10 at 3.31.33 PM.png"
+  alt="The beautiful MDN logo.">
+</figure>
 
 
 
@@ -203,44 +198,7 @@ Then Add Email and Password
 Email: admin@admin.com
 Password: admin
 
-*For Staff*
-Email: staff@staff.com
-Password: staff
-
-*For Student*
-Email: student@student.com
-Password: student
 
 
-
-## For Sponsor or Projects Enquiry
-1. Email - jobowonubi@gmail.com
-2. LinkedIn - [jobic10](https://www.linkedin.com/in/jobic10 "Owonubi Job Sunday on LinkedIn")
-2. Twitter - [jobic10](https://www.twitter.com/jobic10 "Owonubi Job Sunday on Twitter")
-
-
-
-## How the system works
-Administrator is required to have created candidates. 
-Before creating candidates, the admin must have created positions
-After doing this, the voters can vote (provided that they are registered and verified)
-
-## How do voters get verified ?
-OTP is sent to voter's phone. In a case of OTP delivery error, voter can request for OTP again. 
-The OTP is sent via an SMS gateway. 
-Voters can request for OTP for a maximum of three times.
-Same OTP is sent to voters
-
-## Can OTP verification be bypassed ?
-Yeah, sure.
-Open `settings.py` and toggle `SEND_OTP` to  `False`
-Then, wait till server restarts
-
-## Open to contribution ?
-Yeah. Pull requests are welcomed.
-
-
-## Having any issue using this ?
-Please, let us know. Open up an issue. 
 
 
