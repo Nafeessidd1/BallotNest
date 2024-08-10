@@ -1,0 +1,31 @@
+{% extends "voting/base.html" %}
+{% block content %}
+
+    <div class="login-box">
+        <div class="login-logo">
+            <h1>Voting System</h1>
+        </div>
+
+        <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+
+            <form action="{% url 'account_login' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" name="email" placeholder="Email" required>
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Sign In</button>
+                    <a href="{% url 'account_register' %}" class="btn btn-secondary"><i class="fa fa-user-plus"></i> Register</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}
+

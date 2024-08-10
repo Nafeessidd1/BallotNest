@@ -1,0 +1,17 @@
+<!-- templates/voting/reg.html -->
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <h2 class="text-center">Register</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form1|crispy }}
+            {{ form2|crispy }}
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
